@@ -7,9 +7,8 @@ Console.Clear();
 Console.WriteLine("Задача 36: Задать одномерный массив случайными числами.");
 Console.WriteLine("Найти сумму элементов, стоящих на нечётных позициях.");
 Console.WriteLine();
-//Console.Write("Введите количество элементов массива:  ");
-int count = new Random().Next(1, 30);
-//int count = int.Parse(Console.ReadLine());
+//Определим количество элементов массива
+int count = new Random().Next(2, 30);
 Console.WriteLine($"В массиве задано элементов - {count}.");
 int [] arr = new int [count];
 
@@ -52,7 +51,6 @@ void CountSummOdd (int[] arr)
             MetodSumm(temp);
         }
     }
-    //return summOdd;
 }
 CountSummOdd (arr);
 
@@ -60,7 +58,6 @@ int MetodSumm(int temp)
 // Суммируем элементы, стоящие на нечётных позициях
 {
     summOdd = summOdd + temp;
-    //Console.WriteLine($"перменная summOdd имеет значение {summOdd}.");
     return summOdd;
 }
 
